@@ -1,0 +1,108 @@
+/* Default styles */
+
+.project-title h1{
+  font-size: 50px;
+}
+
+/* margin */
+.margin-top {
+  margin-top: 50px;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
+
+
+/* project cover */
+
+.project-cover {
+  height: 400px;
+  background-image: url(/assets/img/portfolio/Crayon_Dirt.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-color: rgb(219, 213, 213);
+}
+
+.center-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+/* card */
+
+.card {
+  height: fit-content;
+}
+
+.card-title {
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+  font-size: 16px;
+  font-weight: 500;
+  color: #231f20;
+}
+
+.card-body{
+  color: var(--light-grey-color);
+}
+
+/* skill */
+.skill {
+  border: 2px solid rgba(0, 0, 0, 0.175);
+  color: var(--secondary-color);
+  font-weight: 700;
+  width: fit-content;
+  padding: 5px;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.skill{
+  pointer-events: none;
+}
+
+.java {
+  background-color: rgb(194, 10, 10);
+}
+
+.javascript {
+  background-color: #f0db4f;
+}
+
+.react {
+  background-color: #61dbfb;
+}
+
+.spring {
+  background-color: rgb(80, 240, 80);
+}
+
+/* media query */
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "two"
+      "one";
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .project-title h1{
+    font-size: 30px;
+  }
+}

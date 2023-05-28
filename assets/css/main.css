@@ -1,0 +1,416 @@
+:root {
+  --primary-color: #183153;
+  --secondary-color: #f0f1f3;
+  --red-color: rgb(223, 7, 7);
+  --light-white-color: #f5ecec;
+  --light-grey-color: #7c7c80;
+  --text-color-one: #183153;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light-white-color);
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: var(--light-white-color);
+}
+
+h1 {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.main-heading {
+  color: var(--text-color-one);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.sub-heading {
+  color: rgb(139, 139, 139);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.about-heading {
+  margin-bottom: 5rem;
+}
+
+.heading-color {
+  color: var(--text-color-one);
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 19px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* center items */
+
+.centered {
+  text-align: center;
+}
+
+.centered-0 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Links */
+
+/*link left margin */
+
+.left-margin {
+  margin-left: 10px;
+}
+
+
+a:before,
+a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* navbar */
+.navbar {
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+
+h1.navbar-brand {
+  margin: 0;
+}
+
+.brand {
+  text-decoration: none;
+}
+
+.navbar-inverse {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.navbar-inverse {
+  background-color: var(--primary-color);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: var(--red-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--red-color) !important;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: transparent;
+}
+
+
+/* skills */
+
+.skills {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills>li {
+  margin-left: 20px;
+}
+
+.skills>li,
+img {
+  pointer-events: none;
+}
+
+/* image */
+
+.rounded-img img {
+  width: 130px;
+}
+
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+/* Helpers classes*/
+
+.mt {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.pt {
+  padding: 50px 50px 50px 50px;
+}
+
+/* +++++ PORTFOLIO SECTIONS +++++ */
+
+#pt {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.flip-back a {
+  color: white;
+}
+
+.flip-back a:hover {
+  color: var(--red-color);
+}
+
+/* +++++ WELCOME SECTIONS +++++ */
+
+.ww {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  height: 500px;
+  color: var(--text-color-one);
+}
+
+/* grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "monkey raiders vikings"
+    "force emperors chiefs";
+  width: 800px;
+}
+
+.e-title {
+  font-weight: 900;
+}
+
+/* +++++ FOOTER SECTION +++++ */
+
+footer {
+  background-color: var(--primary-color);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--light-white-color);
+}
+
+footer h4 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--red-color);
+}
+
+/* +++++ ABOUT SECTION +++++ */
+.about {
+  background-color: var(--primary-color);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
+
+#white {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+/* Blog Date*/
+bd {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+  font-size: 22px;
+  padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+  font-size: 12px;
+}
+
+
+
+
+/* flip card */
+
+.flip-container {
+  position: relative;
+  height: 230px;
+}
+
+.flip-card {
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 100%;
+  transform-style: preserve-3d;
+  background: var(--primary-color);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-body>p {
+  margin-bottom: 0;
+  padding: 15px 0
+}
+
+.flip-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.flip-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 5px;
+}
+
+.project-name {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* ================== MEDIA QUERY ================== */
+
+@media screen and (max-width: 984px) {
+
+  body {
+    text-align: center;
+  }
+
+  .my {
+    margin-top: 100px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "monkey raiders"
+      "vikings force"
+      "emperors chiefs";
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "monkey"
+      "raiders"
+      "vikings"
+      "force"
+      "emperors"
+      "chiefs";
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .main-heading {
+    font-size: 2.4rem;
+  }
+
+  .ww {
+    padding: 0 !important;
+    height: fit-content;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+}
